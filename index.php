@@ -1,6 +1,6 @@
 <?php
     $chap = isset($_GET['ch']) ? $_GET['ch'] : 2;
-    $exo = isset($_GET['exo']) ? $_GET['ex'] : 1;
+    $exo = isset($_GET['ex']) ? $_GET['ex'] : 1;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +12,6 @@
 </head>
 <body>
     <h1>Réalisation des exercices du livre : PHP 5 par jean Engels</h1>
-    <?php require_once("exercices/$chap/$exo.php"); ?>
+    <?php require_once("exercices/$chap/exo$exo.php"); ?>
 </body>
 </html>
