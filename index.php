@@ -1,3 +1,7 @@
+<?php
+    $chap = isset($_GET['ch']) ? $_GET['ch'] : 2;
+    $exo = isset($_GET['exo']) ? $_GET['ex'] : 1;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +12,6 @@
 </head>
 <body>
     <h1>Réalisation des exercices du livre : PHP 5 par jean Engels</h1>
-    <?php require_once("exercices/3/exo8.php"); ?>
+    <?php require_once("exercices/$chap/$exo.php"); ?>
 </body>
 </html>
