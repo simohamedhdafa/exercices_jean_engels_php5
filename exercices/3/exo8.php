@@ -9,7 +9,7 @@
             if( $a > $b ){ $a = $a - $b; }
             else if( $a < $b ){ $b = $b - $a; }
         }
-        $pgcd = $a;
+        echo "pgcd = $a";
     }catch(TypeError $e){
         echo $e->getMessage();
     }
