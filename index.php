@@ -8,6 +8,6 @@
 </head>
 <body>
     <h1>Réalisation des exercices du livre : PHP 5 par jean Engels</h1>
-    <?php require_once("exercices/3/exo7.php"); ?>
+    <?php require_once("exercices/3/exo8.php"); ?>
 </body>
 </html>
