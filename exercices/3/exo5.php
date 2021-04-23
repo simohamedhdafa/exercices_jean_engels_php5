@@ -1,22 +1,27 @@
 <?php
 
-    /* sol de l'exercice 5 ch 3 */
+    $nombre_aleatoire = random_int(100, 999);
     $compteur = 0;
-    $a1 = $a2 = $a3 = NULL;
 
+    /*
+    // proposition avec while
     while(true){
-        $a1 = random_int(0, 999);
-        $compteur ++;
-        if($a1%2!=0){
-           $a2 = random_int(0, 999);
-           $compteur ++;
-           if($a2%2==0){
-               $a3 = random_int(0, 999);
-               $compteur ++;
-               if($a3%2==0){
-                   echo "apres $compteur iterations, ($a1, $a2, $a3)";
-                   break;
-               }
-           }
-        }
+        $a = random_int(0, 1000);
+        $compteur++;
+        if($a == $nombre_aleatoire)
+            break;
     }
+
+    echo "$compteur essaies pour tomber sur $nombre_aleatoire";
+    */
+
+    // version avec for
+    for($compteur=1, $a=random_int(0, 1000); $a!=$nombre_aleatoire; $compteur++){
+        
+        if($a==$nombre_aleatoire)
+            break;
+        $a=random_int(0, 1000);
+        echo "test $a $nombre_aleatoire" . "<br/>";
+    }
+    
+    echo "$compteur essaies pour tomber sur $nombre_aleatoire";
